@@ -7,7 +7,7 @@ function increment(){
         current_number_w.innerHTML = current_number;
     }
     if (current_number === 11){
-        alert("Só pode incrementa até o número 11.")
+        alert("Só pode incrementar até o número 11.")
     }
 }
 
