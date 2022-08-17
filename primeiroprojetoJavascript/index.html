@@ -14,7 +14,7 @@
 </head>
 <body>
     <h1 style="color: white;"><strong> Start JavaScript </strong></h1>
-    <hr>
+    
     <p style="color: rgb(188, 212, 51);"> <strong>Primeiro projeto JavaScript. </strong> </p>
     
     <div id="counter">
@@ -24,10 +24,12 @@
         <button name="adicionar" onclick="increment()">+</button>
         <script> 
             var nome  = window.prompt('Digite seu nome: ')
-            
+            if (nome === ''){
+                nome = 'Por Favor'
+            }
         </script>
     </div>
-    <div style="color:white ;" mt=2><script>document.write('Começe o encremento ou decremento, ' , nome, '.')</script></div>
+    <div style="color:white ;" mt=2><script>document.write('Começe o encremento ou decremento, ' , nome.toUpperCase(), '.')</script></div>
     <script src="assets/js/scripts.js"> 
     </script>
 </body>
